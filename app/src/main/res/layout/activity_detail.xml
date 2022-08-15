@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_ikan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.DetailStoryActivity">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tv_harga"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_stok"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_alamat"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_detail_story"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:clickable="true"
+            android:contentDescription="@string/detail_harga"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_photo"
+            android:transitionName="imageDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama_ikan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/nama_ikan"
+            android:textSize="24sp"
+            android:transitionName="Detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_detail_story" />
+
+        <TextView
+            android:id="@+id/tv_detail_alamat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="@string/alamat"
+            android:textSize="16sp"
+            android:transitionName="description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tv_nama_ikan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/tv_nama_ikan"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_ikan"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:text="@string/stok"
+            android:textColor="@color/blue_700"
+            android:background="@drawable/bg_btn_yellow_200"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_ikan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_alamat"
+            app:backgroundTint="@null"/>
+
+        <TextView
+            android:id="@+id/tv_stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/stok"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/stok"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_alamat" />
+
+        <Button
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:text="@string/harga"
+            android:background="@drawable/bg_btn_yellow_200"
+            android:textColor="@color/blue_700"
+            app:layout_constraintStart_toStartOf="@+id/stok"
+            app:layout_constraintTop_toBottomOf="@+id/stok"
+            app:backgroundTint="@null"/>
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/harga"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/harga"
+            app:layout_constraintTop_toBottomOf="@+id/tv_stok" />
+
+        <TextView
+            android:id="@+id/tv_catatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/catatan"
+            android:textColor="@color/blue_700"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/harga"
+            app:layout_constraintTop_toBottomOf="@+id/harga" />
+
+        <EditText
+            android:id="@+id/tambah_catatan"
+            android:layout_width="388dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:hint="@string/tulis_kg"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/img_detail_story"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/img_detail_story"
+            app:layout_constraintTop_toBottomOf="@+id/tv_catatan" />
+
+        <Button
+            android:id="@+id/btn_tambah_ke_keranjang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tambah_ke_keranjang"
+            android:background="@drawable/bg_btn_blue_700"
+            app:layout_constraintEnd_toEndOf="@+id/tambah_catatan"
+            app:layout_constraintStart_toStartOf="@+id/tambah_catatan"
+            app:layout_constraintTop_toBottomOf="@+id/tambah_catatan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

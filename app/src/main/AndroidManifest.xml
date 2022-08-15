@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.capstone.fishku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_fishku"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_fishku"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FISHKUAPP"
+        tools:targetApi="28">
+        <activity
+            android:name=".ui.activity.LacakPengirimanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CekStatusPengirimanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DeteksiKesegaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MarketActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ui.activity.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

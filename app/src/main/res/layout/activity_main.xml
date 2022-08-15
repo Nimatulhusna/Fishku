@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_selamat_datang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/selamat_datang"
+        android:textColor="@color/blue_700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/nama_pengguna"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="26sp"/>
+
+    <ImageView
+        android:id="@+id/iv_akun"
+        android:layout_width="100dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/akun"
+        android:src="@drawable/ic_account_circle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_kesegaran"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="160dp"
+        app:cardBackgroundColor="@color/blue_700"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/iv_kesegaran"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/deteksi_kesegaran"
+            android:src="@drawable/ic_camera_scan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/deteksi_kesegaran"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_belanja"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="160dp"
+        app:cardBackgroundColor="@color/blue_700"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/iv_belanjaikan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_shopping_cart"
+            android:layout_gravity="top|center"
+            android:contentDescription="@string/belanja_ikan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/belanja_ikan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_lokasi_tpi"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="360dp"
+        app:cardBackgroundColor="@color/blue_700"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/iv_lokasi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/lokasi_tpi"
+            android:src="@drawable/ic_map" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/lokasi_tpi"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_riwayat"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="360dp"
+        app:cardBackgroundColor="@color/blue_700"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/iv_riwayat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_list"
+            android:layout_gravity="top|center"
+            android:contentDescription="@string/riwayat_pemesanan"/>
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/riwayat_pemesanan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

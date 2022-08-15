@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".ui.activity.DeteksiKesegaranActivity">
+
+    <ImageView
+        android:id="@+id/iv_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:src="@drawable/ic_image_placeholder"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_700" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_700"
+        android:layout_margin="16dp"
+        android:text="@string/deteksi_kesegaran_note"/>
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:background="@drawable/bg_btn_blue_700"
+        android:textSize="16sp"
+        android:text="@string/pilih_gambar_dari_galeri"
+        app:backgroundTint="@null"/>
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:background="@drawable/bg_btn_blue_700"
+        android:textSize="16sp"
+        android:text="@string/ambil_gambar_dari_kamera"
+        app:backgroundTint="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/btn_deteksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:paddingVertical="16dp"
+        android:background="@drawable/bg_btn_blue_500"
+        android:textSize="16sp"
+        android:text="@string/buat_deteksi_kesegaran_ikan"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name" translatable="false">FI$HKU APP</string>
+    <string name="logo_fishku" translatable="false">Logo FISHKU</string>
+    <string name="masuk_akun" translatable="false">MASUK AKUN</string>
+    <string name="buat_akun_kamu" translatable="false">BUAT AKUN KAMU</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="nama_pengguna" translatable="false">Nama Pengguna</string>
+    <string name="alamat" translatable="false">Alamat</string>
+    <string name="kata_sandi" translatable="false">Kata Sandi</string>
+    <string name="email_salah" translatable="false">Email yang dimasukkan salah</string>
+    <string name="kata_sandi_salah" translatable="false">Kata Sandi yang dimasukkan salah</string>
+    <string name="harus_diisi" translatable="false">Harus diisi</string>
+    <string name="isi_semua" translatable="false">Isi semua dengan benar</string>
+    <string name="masuk" translatable="false">MASUK</string>
+    <string name="bergabung" translatable="false">BERGABUNG</string>
+    <string name="antar_ke" translatable="false">Antar Ke</string>
+    <string name="deteksi_kesegaran" translatable="false">Deteksi Kesegaran</string>
+    <string name="lokasi_tpi" translatable="false">Lokasi TPI</string>
+    <string name="belanja_ikan" translatable="false">Belanja Ikan</string>
+    <string name="riwayat_pemesanan" translatable="false">Riwayat Pemesanan</string>
+    <string name="cari_ikan" translatable="false">CARI IKAN</string>
+    <string name="ketik_jenis_ikan" translatable="false">Ketik jenis ikan yang kamu cari</string>
+    <string name="detail_harga" translatable="false">DETAIL HARGA</string>
+    <string name="stok" translatable="false">Stok</string>
+    <string name="harga" translatable="false">Harga</string>
+    <string name="catatan" translatable="false">Catatan</string>
+    <string name="tambah_ke_keranjang" translatable="false">TAMBAH KE KERANJANG</string>
+    <string name="keranjang" translatable="false">KERANJANG</string>
+    <string name="produk" translatable="false">PRODUK</string>
+    <string name="lihat_detail_pesanan" translatable="false">LIHAT DETAIL PESANAN</string>
+    <string name="detail_pesanan" translatable="false">DETAIL PESANAN</string>
+    <string name="nama_penjual" translatable="false">Nama Penjual</string>
+    <string name="ongkir" translatable="false">Ongkir</string>
+    <string name="total_harga" translatable="false">TOTAL HARGA</string>
+    <string name="pesan" translatable="false">PESAN</string>
+    <string name="pembayaran" translatable="false">Pembayaran melalui sistem bayar di tempat (Cash On Delivery)</string>
+    <string name="tidak_punya_akun" translatable="false">Tidak punya akun? Daftar disini</string>
+    <string name="sudah_punya_akun" translatable="false">Sudah punya akun? Masuk disini</string>
+    <string name="akun" translatable="false">akun</string>
+    <string name="gambar_ikan">Gambar Ikan</string>
+    <string name="nama_ikan">Nama Ikan</string>
+    <string name="selamat_datang">Halo, Selamat Datang!</string>
+    <string name="beli">beli</string>
+    <string name="tulis_kg">Tulis butuh berapa Kg, es batu, atau yang lainnya.</string>
+    <string name="detail_alamat">Detail Alamat</string>
+    <string name="tulis_alamat_lengkap">Jalan…</string>
+    <string name="titik">--------------------------------------</string>
+    <string name="nomor">Nomor HP</string>
+    <string name="keluar">Keluar</string>
+    <string name="deteksi_kesegaran_note">NOTE : masukkan gambar melalui galeri atau kamera. Lalu, klik tombol buat deteksi kesegaran ikan</string>
+    <string name="hubungi_penjual_melalui_nomor_telepon_agar_pemesanan_dapat_terkonfirmasi">*Hubungi penjual melalui nomor telepon agar pemesanan dapat terkonfirmasi*</string>
+    <string name="jl_krasak_pandean_tumpangkrasak_jati_kudus_59349">Jl. Krasak Pandean, Tumpangkrasak, Jati, Kudus, 59349</string>
+    <string name="estimasi_waktu_kedatangan_2_3_hari_menggunakan_j_t_express"><![CDATA[Estimasi waktu kedatangan 2-3 Hari menggunakan J&T Express.]]></string>
+    <string name="pilih_gambar_dari_galeri">PILIH GAMBAR DARI GALERI</string>
+    <string name="ambil_gambar_dari_kamera">AMBIL GAMBAR DARI KAMERA</string>
+    <string name="buat_deteksi_kesegaran_ikan">BUAT DETEKSI KESEGARAN IKAN</string>
+</resources>

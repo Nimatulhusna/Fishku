@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/iv_ikan"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_photo"
+        android:contentDescription="@string/gambar_ikan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_nama_ikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_ikan"
+        app:layout_constraintStart_toEndOf="@+id/iv_ikan"
+        app:layout_constraintTop_toTopOf="@+id/iv_ikan"
+        app:layout_constraintVertical_bias="0.269"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_berat_ikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_ikan"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama_ikan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama_ikan"
+        app:layout_constraintTop_toTopOf="@+id/iv_ikan"
+        app:layout_constraintVertical_bias="0.82"
+        tools:text="TextView"/>
+
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_ikan"
+        app:layout_constraintStart_toEndOf="@+id/tv_berat_ikan"
+        tools:text="@string/harga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
